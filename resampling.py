@@ -14,7 +14,7 @@ from random import shuffle
 import matplotlib.pyplot as plt
 
 exp_df = pd.read_csv(r'/home/bzmccarthy/Scripts/Random/Data/gpa.csv')
-num_pulls = 10000
+num_pulls = 500
 
 def main():
 
@@ -30,7 +30,7 @@ def main():
 
     yes_test_means_df = pd.DataFrame(yes_test_means,columns=['gpa'])
 
-    n, bins, patches = plt.hist(yes_test_means, 100, normed=1,
+    n, bins, patches = plt.hist(yes_test_means, 20, normed=1,
                                 facecolor='green', alpha=0.75)
     plt.show()
 
